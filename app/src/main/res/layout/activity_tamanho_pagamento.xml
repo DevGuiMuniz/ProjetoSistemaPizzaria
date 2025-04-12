@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCardapio"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cardapio_pizza"
+            android:contentDescription="Imagem do cardápio"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/txtEscolhaTamanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o tamanho da pizza:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/groupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPequena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequena (R$ 25,00)" />
+
+            <RadioButton
+                android:id="@+id/rbMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Média (R$ 35,00)" />
+
+            <RadioButton
+                android:id="@+id/rbGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande (R$ 45,00)" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtEscolhaPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o método de pagamento:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/groupPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbDinheiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinheiro" />
+
+            <RadioButton
+                android:id="@+id/rbCartao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão" />
+        </RadioGroup>
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:id="@+id/btnFinalizarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar Pedido"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

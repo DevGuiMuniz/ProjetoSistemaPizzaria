@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtResumo"
+        android:layout_width="333dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:layout_width="255dp"
+        android:layout_height="276dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pedido_concluido" />
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/btnNovoPedido"
+        android:text="Novo Pedido"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
